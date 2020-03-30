@@ -5,7 +5,7 @@ $title = "Hostloc";
 //十八禁目标地址
 $index_go = "https://saikou.net";
 //网站域名
-$domain = 'hostloc.com';
+$domain = $_SERVER['HTTP_HOST'];
 //<-------网站配置结束------->
 if(!file_exists(__DIR__.'/page.base.php')){
     exit('[ERROR:1000]页面文件无法找到');
