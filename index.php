@@ -28,8 +28,8 @@ if((int)(@$CacheData['cache_end_time']) < time() || empty(@$CacheData['cache_inf
         }
     }else{
         $EchoLinks = $CacheGet['data'];
-        file_put_contents(__DIR__.'/cache.dat',json_encode(array('cache_end_time' => (time() + 1000),'cache_info' => $EchoLinks)));
     }
+	file_put_contents(__DIR__.'/cache.dat',json_encode(array('cache_end_time' => (time() + 1000),'cache_info' => $EchoLinks)));
 }else{
     $EchoLinks = $CacheData['cache_info'];
 }
