@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
 <html>
 <head>
-<title><?echo $title?></title>
+<title><?php echo $title; ?></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <style type="text/css">
@@ -149,10 +149,10 @@ older. </font><br>
 <p align="center">
 <b>
 <font size="7" face="Verdana">
-<a href="<?echo $index_go;?>">__ 滿 18 歲, 
+<a href="<?php echo $index_go; ?>">__ 滿 18 歲, 
 請按此 __</a></font></b><BR><BR>
 </p>
 <div class="links" align="center">
-<?echo $links;?>
+<?php echo $EchoLinks; ?>
 </div>
 </body></html>
